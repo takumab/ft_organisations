@@ -63,7 +63,7 @@ router.patch('/organisations/:id', async (req, res) => {
       return res.status(404).json({ error: 'Organisation does not exist' });
     }
 
-    res.status(204).json(organisation);
+    res.status(200).json(organisation);
   } catch (e) {
     res.status(400).send(e);
   }
