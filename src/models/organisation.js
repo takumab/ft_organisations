@@ -2,12 +2,21 @@ import mongoose from 'mongoose';
 
 const { Schema } = mongoose;
 
-const organisationSchema = new Schema('Orgnaisation', {
-  name: String,
-  year: Number,
-  revenue: Number
+const organisationSchema = new Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  year: {
+    type: Number,
+    required: true
+  },
+  revenue: {
+    type: Number,
+    required: true
+  }
 });
 
-const Organisation = mongoose.Model('Organisation', organisationSchema);
+const Organisation = mongoose.model('Organisation', organisationSchema);
 
 export default Organisation;
