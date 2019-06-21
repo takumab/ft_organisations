@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://127.0.0.1:27017/ft_organisations', {
+mongoose.connect(`${process.env.MONGODB_URI}`, {
   useNewUrlParser: true,
   useCreateIndex: true
 });
