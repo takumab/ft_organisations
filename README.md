@@ -7,8 +7,8 @@ properties in which you can update. Name (type String, required: true), year (ty
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-1. git clone git@github.com:takumab/ft_organisations.git
-2. cd ft_organisations
+1. `git clone git@github.com:takumab/ft_organisations.git`
+2. `cd ft_organisations`
 
 ### Prerequisites
 
