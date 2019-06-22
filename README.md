@@ -1,8 +1,7 @@
 ## FT Organisations
 
 A simple CRUD API that allows you to create, read, update and delete organisations. Organisations have three
-properties in which you can update. Name (type String, require: true), year (type Number), and revenue (type Number).
-In
+properties in which you can update. Name (type String, required: true), year (type Number), and revenue (type Number).
 
 ## Getting Started
 
@@ -17,7 +16,7 @@ What things you need to install the software and how to install them
 
 - [node](https://nodejs.org/en/)
 - [MongoDB](https://www.mongodb.com/what-is-mongodb)
-- [Postman](https://www.getpostman.com/) API development environment
+- [Postman](https://www.getpostman.com/) API development environment (optional but nice to have)
 
 Check that you have node, npm, and mongodb installed by running the following commands
 
@@ -33,7 +32,7 @@ npm -v
 mongo --version
 ```
 
-If you receive a `command not found` message in the termial please go to the links above.
+If you receive a `command not found` message for any of those commands please visit to the links above and download those tools.
 
 ### Installing
 
@@ -65,17 +64,16 @@ npm test
 
 ## Built With
 
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency Management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [Express](https://expressjs.com//) - The web framework used
+- [Mongoose](https://mongoosejs.com/) - ODM
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+1. `git clone git@github.com:takumab/ft_organisations.git`
+2. `cd ft_organisations`
+3. `npm install`
+4. Make changes
+5. Create a Pull Request
 
 ## Authors
 
