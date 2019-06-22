@@ -14,7 +14,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-- [node](https://nodejs.org/en/) latest version
+- [node](https://nodejs.org/en/)
+- [MongoDB](https://www.mongodb.com/what-is-mongodb)
 
 Check that you have node and npm installed by running the following commands
 
@@ -30,16 +31,18 @@ npm -v
 
 A step by step series of examples that tell you how to get a development env running
 
+
+
 Run the following command to get the packages needed for the app
 
 ```
 npm install
 ```
 
-And repeat
+Copy over .env.example to /config/dev.env and /config/test.env
 
 ```
-until finished
+cp .env.example /config/dev.env
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
