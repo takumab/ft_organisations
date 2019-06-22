@@ -1,11 +1,12 @@
 ## FT Organisations
 
-A simple CRUD app that allows you to create, read, update and delete organisations. Organisations have three
-properties in which you can update. Name (type String), year (type Number), and revenue (type Number)
+A simple CRUD API that allows you to create, read, update and delete organisations. Organisations have three
+properties in which you can update. Name (type String, require: true), year (type Number), and revenue (type Number).
+In
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 1. git clone git@github.com:takumab/ft_organisations.git
 2. cd ft_organisations
@@ -16,8 +17,9 @@ What things you need to install the software and how to install them
 
 - [node](https://nodejs.org/en/)
 - [MongoDB](https://www.mongodb.com/what-is-mongodb)
+- [Postman](https://www.getpostman.com/) API development environment
 
-Check that you have node and npm installed by running the following commands
+Check that you have node, npm, and mongodb installed by running the following commands
 
 ```
 node -v
@@ -27,11 +29,13 @@ node -v
 npm -v
 ```
 
+```
+mongo --version
+```
+
+If you receive a `command not found` message in the termial please go to the links above.
+
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-
 
 Run the following command to get the packages needed for the app
 
@@ -45,31 +49,19 @@ Copy over .env.example to /config/dev.env and /config/test.env
 cp .env.example /config/dev.env
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+```
+cp .env.example /config/test.env
+```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Ensure you have [jest](https://jestjs.io/docs/en/getting-started) installed
 
-### Break down into end to end tests
-
-Explain what these tests test and why
+And to run the tests run:
 
 ```
-Give an example
+npm test
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -87,16 +79,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
+- **Tacuma Bellford** -
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/takumab/ft_organisations/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
