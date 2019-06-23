@@ -37,16 +37,19 @@ If you receive a `command not found` message for any of those commands please vi
 ### Create database
 
 After installing MongoDB you should be able to go into mongo shell by running:
+
 ```
 mongo
 ```
 
-Once in the mongo shell create the database by running
+Once in the mongo shell create the database by running:
+
 ```
 > use name-of-db
 ```
 
 Then you can add the db uri to config/dev.env file
+
 ```
 MONGODB_URI=name-of-db
 ```
@@ -90,13 +93,14 @@ npm test
 
 1. `git clone git@github.com:takumab/ft_organisations.git`
 2. `cd ft_organisations`
-3. `npm install`
-4. Make changes
-5. Create a Pull Request
+3. `npm install && npm run dev`
+4. `npm run test`
+5. Make changes
+6. Create a Pull Request
 
 ## Authors
 
-- **Tacuma Bellford** -
+- **Tacuma Bellford**
 
 See also the list of [contributors](https://github.com/takumab/ft_organisations/contributors) who participated in this project.
 
