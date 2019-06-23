@@ -34,6 +34,25 @@ mongo --version
 
 If you receive a `command not found` message for any of those commands please visit to the links above and download those tools.
 
+### Create database
+
+After installing MongoDB you should be able to go into mongo shell by running:
+```
+mongo
+```
+
+Once in the mongo shell create the database by running
+```
+> use name-of-db
+```
+
+Then you can add the db uri to config/dev.env file
+```
+MONGODB_URI=name-of-db
+```
+
+Repeat above for test db as well, but add 'test' to end of db name (`name-of-db-test`) and add to `MONGO_URI=` config/test.env file
+
 ### Installing
 
 Run the following command to get the packages needed for the app
